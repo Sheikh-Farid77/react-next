@@ -1,14 +1,12 @@
-import Introduction from "./components/Adding Interactivity/Introduction"
+import Gallery from "./components/Adding Interactivity/Gallery";
 
 
 function App() {
-
-
   return (
     <>
-    <Introduction />
+      <Gallery />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

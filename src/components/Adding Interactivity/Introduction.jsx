@@ -1,16 +1,15 @@
 import { useState } from "react";
 
 export default function Introduction() {
+  const [totalPrice, setTotalPrice] = useState(0);
 
-    const [totalPrice, setTotalPrice] = useState(0)
+  const price = 5000;
 
-    const price = 5000;
+  const handlePrice = () => {
+    setTotalPrice((p) => p + price);
+  };
 
-    const handlePrice = ()=>{
-        setTotalPrice(p => p + price)
-
-    }
-
+  
   return (
     <div className="shadow-md rounded-lg bg-slate-800 border-slate-700">
       <div className="shadow-md rounded-lg bg-slate-800 border-slate-700">
@@ -28,18 +27,16 @@ export default function Introduction() {
                 Reactive Accelerator Course
               </h3>
             </a>
-            <span
-              id="total"
-              className="text-xl font-medium text-teal-500"
-            >{totalPrice} Tk</span>
+            <span id="total" className="text-xl font-medium text-teal-500">
+              {totalPrice} Tk
+            </span>
           </div>
           <div className="flex items-center justify-between mt-5">
-            <span
-              id="price"
-              className="text-2xl font-bold text-slate-300"
-            >{price} Tk</span>
+            <span id="price" className="text-2xl font-bold text-slate-300">
+              {price} Tk
+            </span>
             <a
-            onClick={handlePrice}
+              onClick={handlePrice}
               href="#"
               id="button"
               className="text-white focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-[#087ea4] hover:bg-[#087ea4]/[.8] focus:ring-[#087ea4]/[.5]"
