@@ -1,3 +1,4 @@
+import Introduction from "./components/Adding Interactivity/Introduction"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-    <h1>Hello world</h1>
+    <Introduction />
     </>
   )
 }
