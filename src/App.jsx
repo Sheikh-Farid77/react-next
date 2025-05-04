@@ -1,10 +1,9 @@
-import Condition from "./components/Getting Started/Condition";
-import Profile from "./components/Getting Started/Profile";
+import List from "./components/Getting Started/List";
 
 function App() {
   return (
     <>
- <Condition />
+<List />
     </>
   );
 }
