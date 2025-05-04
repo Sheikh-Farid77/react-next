@@ -1,10 +1,13 @@
-import Gallery from "./components/Adding Interactivity/Gallery";
+import Brace from "./components/Getting Started/Brace";
+import DateHeader from "./components/Getting Started/DateHeader";
+
+
 
 
 function App() {
   return (
     <>
-      <Gallery />
+     <Brace />
     </>
   );
 }
