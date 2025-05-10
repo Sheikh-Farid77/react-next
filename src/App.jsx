@@ -1,10 +1,11 @@
-import List from "./components/Getting Started/List";
-import TeaGathering from "./components/Getting Started/TeaGathering";
+import Gallery from "./components/Adding Interactivity/Gallery";
+
 
 function App() {
   return (
     <>
-<TeaGathering />
+<Gallery />
+<Gallery />
     </>
   );
 }
