@@ -71,3 +71,9 @@ export const sculptureList = [{
     url: 'https://i.imgur.com/6o5Vuyu.jpg',
     alt: 'A group of bronze hippo sculptures emerging from the sett sidewalk as if they were swimming.'
 }];
+
+export const initialTasks = [
+  {id: 1, text: 'Visit Kafka Museum', done: true},
+  {id: 2, text: 'Watch a puppet show', done: false},
+  {id: 3, text: 'Lennon Wall pic', done: false},
+];
