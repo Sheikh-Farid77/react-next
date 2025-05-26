@@ -1,18 +1,15 @@
-import { useRef } from "react";
-import MyInput from "./components/Escape Hatches/MyInput";
+import { useState } from "react";
+import VideoPlayer from "./components/Escape Hatches/VideoPlayer";
 
 function App() {
-  const myRef = useRef(null);
-
-  const handleFocus = () => {
-    myRef.current.focus();
-  };
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <>
-      <MyInput type="text" placeholder="Enter Your Name" ref={myRef} />
-      <br />
-      <button onClick={handleFocus}>Focus</button>
+      <button onClick={() => setIsPlaying(!isPlaying)}>
+        {isPlaying ? "Pause" : "Play"}
+      </button>
+      <VideoPlayer isPlaying={isPlaying} src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" />
     </>
   );
 }
