@@ -1,17 +1,18 @@
 import { useRef } from "react";
+import MyInput from "./components/Escape Hatches/MyInput";
 
 function App() {
   const myRef = useRef(null);
 
-  const handleScroll = ()=>{
-    myRef.current.textContent = 'Hello React'
-  }
+  const handleFocus = () => {
+    myRef.current.focus();
+  };
+
   return (
     <>
-      <div className="h-[3000px]">
-        <div className="w-10" ref={myRef}>Hello world</div>
-        <button className="mt-auto" onClick={handleScroll}>Scroll to Div</button>
-      </div>
+      <MyInput type="text" placeholder="Enter Your Name" ref={myRef} />
+      <br />
+      <button onClick={handleFocus}>Focus</button>
     </>
   );
 }
