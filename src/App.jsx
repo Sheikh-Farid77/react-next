@@ -1,9 +1,10 @@
-import Cards from "./components/Escape Hatches/Cards";
+import Mount from "./components/Escape Hatches/Mount";
+
 
 function App() {
   return (
     <>
-      <Cards postId='1' />
+      <Mount />
     </>
   );
 }
