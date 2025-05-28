@@ -1,10 +1,9 @@
-import Mount from "./components/Escape Hatches/Mount";
-
+import Fetch from "./components/Escape Hatches/Fetch";
 
 function App() {
   return (
     <>
-      <Mount />
+      <Fetch />
     </>
   );
 }
