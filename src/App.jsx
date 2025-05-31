@@ -1,9 +1,10 @@
-import Fetch from "./components/Escape Hatches/Fetch";
+import StatusBar from "./components/Escape Hatches/StatusBar";
+
 
 function App() {
   return (
     <>
-      <Fetch />
+    <StatusBar />
     </>
   );
 }
